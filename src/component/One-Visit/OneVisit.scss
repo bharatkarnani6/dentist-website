@@ -1,0 +1,65 @@
+.onevisit{
+    width: 100%;
+    overflow-x: hidden ;
+    height: auto
+}
+.text1{
+    
+    padding: 200px;
+    padding-left: 100px;
+    padding-top: 150px;
+
+    h1{
+        font-weight: bold;
+        font-size: 40px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+.background{
+    margin-left: 294px;
+    background-color: #46C1BB;
+    width: 60%;
+    height: 100%;
+    z-index: -1;
+}
+.image_1{
+    margin-top: -460px;
+    margin-left: -120px;
+    background-image: url('../../assets/CER-Press-image-CEREC-Ortho-SW-2.0-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+.text2{
+    
+    padding: 200px;
+    padding-top: 150px;
+    padding-right: -200px;
+
+    h1{
+        font-weight: bold;
+        font-size: 40px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+.background_2{
+    margin-right: 294px;
+    background-color: #46C1BB;
+    width: 60%;
+    height: 100%;
+    z-index: -1;
+}
+.image_2{
+    margin-top: -420px;
+    margin-left: 120px;
+    background-image: url('../../assets/experts.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}

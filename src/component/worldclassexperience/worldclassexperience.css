@@ -22,6 +22,27 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+.swiper-container .swiper-show {
+  width: 70px;
+  height: 70px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-weight: bolder;
+  background-color: white;
 }
 
 .swiper-container .swiper-slide {
@@ -29,21 +50,8 @@
   width: 70%;
 }
 
-.swiper-container .swiperslide-click-drag {
-  width: 7%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.swiper-container .swiperslide-click-drag .swiperslide-text {
-  padding: 20px 10px 20px 10px;
-  border-radius: 50%;
-  background-color: #277E82;
-  color: white;
+.swiper-container .swiper-slide :hover {
+  cursor: pointer;
 }
 
 .swiper-container .swiperimg {
@@ -92,7 +100,7 @@
   color: white;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
   .animation-heading {
     padding: 5%;
     text-align: center;

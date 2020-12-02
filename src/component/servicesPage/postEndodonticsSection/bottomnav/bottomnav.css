@@ -1,0 +1,143 @@
+.bottomblacks {
+  padding-top: 0%;
+  width: 1420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 5%;
+  margin: 0%;
+  background: #333333 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px -47px 99px #00000029;
+          box-shadow: 0px -47px 99px #00000029;
+  opacity: 1;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  display: flex;
+}
+
+.bottomblacks__box {
+  margin-left: 8%;
+  margin-top: 4%;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #333333  0% 0% no-repeat padding-box;
+}
+
+.ourlocation {
+  width: 136px;
+  height: 26px;
+  padding-left: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 22px/54px SF UI Display;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal bold 21px/17px SF UI Display;
+  letter-spacing: 0px;
+  color: #F7F7F7;
+  opacity: 100%;
+  font-family: sans-serif;
+}
+
+.ourlocationdes {
+  width: 408px;
+  height: 50px;
+  padding-top: 3%;
+  font: var(--unnamed-font-style-normal) normal 300 17px/30px SF UI Display;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal 100 12px/20px SF UI Display;
+  letter-spacing: 0px;
+  color: #bbb9b9;
+  opacity: 1;
+  font-family: sans-serif;
+}
+
+.bottombutton1 {
+  width: 150px;
+  height: 30px;
+  padding-bottom: 0%;
+  margin-top: 8px;
+  white-space: nowrap;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 2px/8px SF UI Display;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  font: normal normal bold 10px/12px SF UI Display;
+  letter-spacing: 0px;
+  font-family: sans-serif;
+  color: #F7F7F7;
+  border: 1px solid #FFFFFF;
+  border-radius: 18px;
+  opacity: 1;
+  background-color: transparent;
+  outline: none;
+  text-align: center;
+}
+
+.whatsapp {
+  margin-top: 75px;
+  padding-right: 20px;
+  margin-left: 41px;
+  width: 46px;
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+}
+
+.youtube {
+  margin-top: 75px;
+  padding-right: 20px;
+  width: 46px;
+  height: 26px;
+  background: transparent;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.twitter {
+  margin-top: 75px;
+  padding-right: 20px;
+  width: 46px;
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+}
+
+.facebook {
+  margin-top: 75px;
+  padding-right: 20px;
+  width: 46px;
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+}
+
+.instagram {
+  width: 46px;
+  height: 26px;
+  margin-top: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 1;
+}
+/*# sourceMappingURL=bottomnav.css.map */

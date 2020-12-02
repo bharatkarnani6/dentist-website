@@ -1,110 +1,115 @@
 .animation{
-    background-image: linear-gradient(180deg,white 20%, #277E82);
-  
-    .animation-heading {
-      display: flex;
-      justify-content: center;
-      letter-spacing: 5px;
-      word-spacing: 10px;
-      font-weight: bolder;
-    }
-  }
-  
-  .swiper-container{
+  background-image: linear-gradient(180deg,white 20%, #277E82);
+
+  .animation-heading {
     display: flex;
     justify-content: center;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-weight: bolder;
+  }
+}
 
-    .swiper-slide {
-      text-align: center;
-      width: 70%;
-    }
-  
-    .swiperslide-click-drag{
-      width: 7%;
-      display: flex;
-      align-items: center;
-  
-      .swiperslide-text{
-        padding: 20px 10px 20px 10px;
-        border-radius: 50%;
-        background-color: #277E82;
-        color: white;
-      }
-    }
-  
-    .swiperimg {
-      width: 90%;
-      height: 550px;
+.swiper-container{
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .swiper-show{
+    width: 70px;
+    height: 70px;
+    z-index: 2;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    background-color: white;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    width: 70%;
+    :hover{
+      cursor: pointer;
     }
   }
-    
-    
-    .schedule-container{
-      padding:150px 250px 100px 250px;
 
-      .schedule-heading{
-        display: flex;
-        justify-content: center;
-        letter-spacing: 10px;
-        font-weight: bolder;
-        color: white;
-      }
+  .swiperimg {
+    width: 90%;
+    height: 550px;
+  }
+}
   
-      .schedule-form{
-        margin-top: 50px;
   
-        .form-btn{
-          width: 100%;
-          padding: 10px;
-          font-size: large;
-          font-weight: bolder;
-          border-radius: 30px;
-          color: #277E82;
-        }
-  
-        .form-input{
-          width: 100%;
-          border: none;
-          border-bottom: 1px solid white;
-          padding: 7px;
-          background: transparent;
-        }
-  
-        .form-label{
-          color: white;
-        }
-      }
-  
+  .schedule-container{
+    padding:150px 250px 100px 250px;
+
+    .schedule-heading{
+      display: flex;
+      justify-content: center;
+      letter-spacing: 10px;
+      font-weight: bolder;
+      color: white;
     }
-    
-    
-    @media only screen and (max-width: 480px) {
-      .animation-heading{
-        padding: 5%;
-        text-align: center;
-      }
-    
-      .swiper-container {
-        margin: 0%;
+
+    .schedule-form{
+      margin-top: 50px;
+
+      .form-btn{
         width: 100%;
         padding: 10px;
-  
-        .swiperimg {
-          width: 100%;
-          height: auto;
-        }
+        font-size: large;
+        font-weight: bolder;
+        border-radius: 30px;
+        color: #277E82;
       }
-    
-      .schedule-container{
-        margin: 0%;
-        padding: 5%;
-  
-        .schedule-heading{
-          text-align: center;
-        }
-  
-        .schedule-form-right{
-          padding-top: 15px;
-        }
+
+      .form-input{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid white;
+        padding: 7px;
+        background: transparent;
+      }
+
+      .form-label{
+        color: white;
       }
     }
+
+  }
+  
+  
+  @media only screen and (max-width: 800px) {
+    .animation-heading{
+      padding: 5%;
+      text-align: center;
+    }
+  
+    .swiper-container {
+      margin: 0%;
+      width: 100%;
+      padding: 10px;
+
+      .swiperimg {
+        width: 100%;
+        height: auto;
+      }
+    }
+  
+    .schedule-container{
+      margin: 0%;
+      padding: 5%;
+
+      .schedule-heading{
+        text-align: center;
+      }
+
+      .schedule-form-right{
+        padding-top: 15px;
+      }
+    }
+  }

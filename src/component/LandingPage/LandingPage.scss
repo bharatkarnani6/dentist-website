@@ -1,0 +1,128 @@
+section{
+    background-color: #46C1BB;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+    perspective: 1px;
+    width: 100%;
+    height: 160vh;
+
+}   
+.sky{
+    height: 100vh;
+    width: 100%;
+    display: block;
+    background-image: url(../../assets/NoPath.png);
+    background-size: cover;
+    position: absolute;
+    background-repeat:repeat-x;
+    animation: bg-animation 20s linear infinite;
+    z-index: -1;
+}
+@keyframes bg-animation{
+    50%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(200px);
+    }
+}
+#logo{
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    clip-path: polygon(100% 0, 89% 33%, 80% 50%, 69% 59%, 57% 61%, 39% 58%, 20% 40%, 0 0);
+    /* clip-path: polygon(100% 0, 81% 60%, 66% 70%, 44% 70%, 30% 61%, 0 0); */
+    /* clip-path: polygon(100% 0, 81% 60%, 66% 70%, 44% 70%, 31% 59%, 0 0); */
+    /* clip-path: polygon(100% 0, 94% 43%, 87% 66%, 63% 80%, 41% 71%, 24% 50%, 10% 23%, 0 0); */
+}
+
+.menu{
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    overflow: hidden;
+    background-color:transparent;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    margin-top:5px ;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  li img{
+      margin-left: 55px;
+      margin-top: -20px;
+      width: 100px;
+      height: 100px;
+  }
+
+.info{
+    margin-top: 100px;
+    height: 10px
+    
+}
+.info h1 {
+    color: #FFFFFF;
+    position:relative;
+    display:inline-block;
+    font-size: 100px;
+    letter-spacing: 15px;
+}
+.info h1:before {
+    position:absolute;
+    content:attr(data-text);
+    color:pink;
+    background:#000;
+    clip-path: circle(70px at var(--x, -100%) var(--y, -100%));
+    font-size: 100px;
+    letter-spacing: 15px;
+    margin-left: -60px;
+}
+.cursor {
+    position:fixed;
+    width:200px;
+    height:200px;
+    border: 2px solid black;
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    pointer-events: none;
+    backdrop-filter: grayscale(50);
+    /* mix-blend-mode: difference; */
+}
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 800px;
+    height: 800px;
+    margin-top: 400px;
+    margin-left: 350px;
+  }
+  
+  .testing{
+      padding-top: 50px;
+  }
+  /* div,
+  a {
+    position: relative;
+    padding: 1em;
+  } */

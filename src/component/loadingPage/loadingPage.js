@@ -86,15 +86,15 @@ class LoadingPage extends React.Component {
   
     );
   }
-  componentDidMount() {
-    const sample = document.querySelector('#sample');
-    debugger;
-    new Drift(sample, {
-      inlinePane: false,
-      // containInline: true,
-      zoomFactor: 0.1
-    });
-  }
+  // componentDidMount() {
+  //   const sample = document.querySelector('#sample');
+  //   debugger;
+  //   new Drift(sample, {
+  //     inlinePane: false,
+  //     // containInline: true,
+  //     zoomFactor: 0.1
+  //   });
+  // }
   
 }
 

@@ -7,15 +7,16 @@ import Ourexperts from './pages/ourexperts';
 import Treatement from './pages/treatements'
 import Worldclassexperience from './pages/worldclassexperience'
 import Services from "./component/servicesPage/services"
+import LandingPage from './component/LandingPage/LandingPage'
 // import Submitform from './component/sumbitform/sumbitform'
 // import Bottomnav from './component/bottomnav/bottomnav'
 import Abouts from './pages/about'
 import { BrowserRouter as Router, Route, Switch,Link} from 'react-router-dom';
 import About from './component/about/about';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
   return (
-  
     <Router>
      
         <Fragment>
@@ -41,6 +42,10 @@ function App() {
              <Route exact 
             path='/treatement' 
             component={ Treatement} 
+            />
+            <Route exact 
+            path='/landingpage' 
+            component={ LandingPage} 
             />
              <Route exact 
             path='/worldclassexperience' 
