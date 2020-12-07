@@ -1,3 +1,6 @@
+@import "../../../node_modules/slick-carousel/slick/slick.css";
+@import "../../../node_modules/slick-carousel/slick/slick-theme.css";
+
 .onevisit{
     width: 100%;
     overflow-x: hidden ;
@@ -6,10 +9,11 @@
 .text1{
     
     padding: 200px;
-    padding-left: 100px;
-    padding-top: 150px;
+    padding-left: 150px;
+    padding-top: 200px;
 
     h1{
+        padding-top: 50px;
         font-weight: bold;
         font-size: 40px;
     }
@@ -19,13 +23,13 @@
 }
 .background{
     margin-left: 294px;
-    background-color: #46C1BB;
+    background:transparent linear-gradient(180deg, #46C1BB 0%, #175C64 100%) 0% 0% no-repeat padding-box;
     width: 60%;
-    height: 100%;
+    height: 70%;
     z-index: -1;
 }
 .image_1{
-    margin-top: -460px;
+    margin-top: -450px;
     margin-left: -120px;
     background-image: url('../../assets/CER-Press-image-CEREC-Ortho-SW-2.0-1.png');
     background-size: cover;
@@ -33,6 +37,197 @@
     width: 100%;
     height: 400px;
 }
+.text5{
+    
+    padding: 200px;
+    padding-left: 150px;
+    padding-top: 200px;
+
+    h1{
+        padding-top: 50px;
+        font-weight: bold;
+        font-size: 40px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .btn{
+        width: 164px;
+        height: 48px;
+        background: #69C6C0 0% 0% no-repeat padding-box;
+        border-radius: 37px;
+        opacity: 1;
+        font-size: 5px;
+        color: #F7F7F7;
+        font: normal normal bold 20px/25px SF UI Display;
+        // padding-right:20px;
+        // padding-left: 20px;
+    }
+    .treatments{
+        font: normal normal bold 196px/330px SF UI Display;
+        font-size: 120px;
+        letter-spacing: 39.79px;
+        opacity: 0.1;
+        color: #000000;
+        padding-left: 12px;
+        margin-top: -15px;
+    }
+}
+.sliders{
+    margin-bottom: 0px;
+}
+.back_colors{
+    width: 30%;
+    background:transparent linear-gradient(180deg, #46C1BB 0%, #175C64 100%) 0% 0% no-repeat padding-box;;
+    height: 90vh;
+    z-index: 1;
+    
+}
+
+.slider_images{
+  width: 1090px;
+  margin: -525px auto;
+  height: auto;
+// background-color: pink;
+  margin-left: -160px;
+  
+}
+// .slick-list {margin: 0 -105px; overflow: hidden;}
+// .slick-slide>div {padding: 0 75px;}
+.slides img {
+  // width: 20rem;
+    margin: 0 auto;
+  // height: 40rem;
+  height: 430px;
+  width: 280px;
+  object-fit: cover;
+}
+
+.slides {
+  transform: scale(0.7);
+  transition: transform 300ms;
+  opacity: 1;
+}
+
+.activeSlides {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.arrows {
+  background-color: white;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrows svg {
+  transition: color 300ms;
+}
+
+.arrows svg:hover {
+  color: #68edff;
+}
+
+.next_button {
+  // right: 90%;
+  top: 137%;
+  left: -40%;
+}
+
+.prev_button {
+
+  left: -45%;
+  top: 137%;
+}
+.previous1 {
+    width: 40px;
+    height: 35px;
+    padding-left: 0%;
+    background-color: #68c5bf;
+  
+    font: normal normal 34px/11px SF UI Display;
+  
+    //    margin-top: 20%;
+    color: white;
+    text-shadow: 0px 3px 6px #40404029;
+    font-family: sans-serif;
+    white-space: nowrap;
+    border: 0px;
+    opacity: 1;
+    display: inline-flex;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 12px;
+    padding-bottom: 0.51%;
+    outline: hidden;
+  }
+  .round1 {
+    border-radius: 50%; 
+    // margin-left: 20%;
+    margin-top: -1.3%;
+    margin-left: 10px;
+  }
+  .previous2 {
+    width: 40px;
+    height: 35px;
+  
+    background-color: #68c5bf;
+  
+    font: normal normal 34px/11px SF UI Display;
+  
+    color: white;
+    text-shadow: 0px 3px 6px #40404029;
+    font-family: sans-serif;
+    white-space: nowrap;
+    opacity: 1;
+    display: inline-flex;
+    align-items: center;
+    border: 0px;
+    padding-left: 15px;
+    padding-bottom: 7px;
+    outline: 0px;
+  
+  }
+  .round2 {
+    border-radius: 50%;
+    margin-left: 1%;
+    margin-top: -1.2%;
+  }
+  
+  .three-dots {
+    width: 500%;
+    height: 5%;
+    display: inline-flex;
+    padding-top: 5px;
+    padding-left: 20%;
+    padding-bottom: 20%;
+    position: absolute;
+    margin-top: -55px;
+    margin-left: -60px;
+    span.first {
+      width: 150px;
+      height: 3px;
+      border-radius: 50%;
+      background: #e4e4e4 0% 0% no-repeat padding-box;
+      display: inline-block;
+      margin: 3px;
+      border-radius: 20%;
+      margin-left: 0%;
+    }
+  
+    span.second {
+      width: 150px;
+      height: 3px;
+      border-radius: 50%;
+      background: #3aa9a1 0% 0% no-repeat padding-box;
+      display: inline-block;
+      margin: 3px;
+      border-radius: 20%;
+      margin-left: 0%;
+    }
+  }
+
 .text2{
     
     padding: 200px;
@@ -55,11 +250,58 @@
     z-index: -1;
 }
 .image_2{
-    margin-top: -420px;
+    margin-top: -450px;
     margin-left: 120px;
     background-image: url('../../assets/experts.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 400px;
+}
+.text3{
+    
+    padding: 200px;
+    padding-top: 180px;
+    padding-left: 160px;
+
+    h1{
+        font-weight: bold;
+        font-size: 40px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+.image_3{
+    margin-top: -10px;
+    margin-left: 0px;
+    background-image: url('../../assets/Tooth.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+.counter{
+    width: 100%;
+    height: 200px;
+    background-color: #46C1BB;
+    font: normal normal bold 90px/94px SF UI Display;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 90px/94px SF UI Display;
+    .row{
+        padding-top: 50px;
+        
+        h1{
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        p{
+            color: white;
+            font-size: 15px;
+        }
+    }
+}
+.carasouel{
+    width: 100%;
+    height: 40vh;
 }

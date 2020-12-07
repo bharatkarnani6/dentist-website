@@ -1,0 +1,60 @@
+.schedule-visit-container{
+    height: 1000px;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #46C1BB 41%, #175C64 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#schedule-visit-text{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 98px/132px SF UI Display;
+    text-align: center;
+    font: normal normal bold 82px/132px SF UI Display;
+    letter-spacing: 15px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    /* white-space: nowrap; */
+    font-family: sans-serif;
+    vertical-align: middle;
+    /* margin-top:30% */
+}
+
+.schedule-visit-form{
+    margin-top:10%;
+    
+}
+
+.input-one{
+    width:40%;
+    border:none;
+    border-bottom: 1px solid rgb(196, 194, 194);
+    background-color: transparent;
+    outline: none;
+    margin:5px;
+}
+
+
+.input-two{
+    width:40%;
+    border:none;
+    border-bottom: 1px solid rgb(196, 194, 194);
+    background-color: transparent;
+    outline: none;
+    margin:5px;
+}
+
+.button-schedule{
+    width:40%;
+    height: 33px;
+    border: none;
+    margin:5px;
+    background: #FEFEFE 0% 0% no-repeat padding-box;
+    border-radius: 37px;
+    opacity: 1;
+    color: #2B8987;
+    /* Font */
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 22px/28px SF UI Display;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    font: normal normal bold 12px/18px SF UI Display;
+    letter-spacing: 0px;
+    font-family: sans-serif;
+}

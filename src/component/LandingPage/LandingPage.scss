@@ -6,8 +6,63 @@ section{
     perspective: 1px;
     width: 100%;
     height: 160vh;
+    cursor: none;
 
 }   
+.background__logobox {
+    // border-bottom-left-radius: 230px;
+    // border-bottom-right-radius: 290px;
+    // border-top-right-radius:0.459228515625px;
+    width: 330px;
+    height: 110px;
+    svg {
+        //position: absolute;
+        // top: 0;
+        // left: 0;
+        // right: 0;
+        // bottom: 0;
+        // display: block;
+        // width: 800px;
+        // height: 800px;
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+        .background__logobox__logoimage{
+            position: absolute;
+            top: 25px;
+            left: 45px;
+        }
+        .background__logobox__Swetha{
+            width: 103px;
+            height: 21px;
+            opacity: 1;
+            font: normal normal 18px/20px SF UI Display;
+            color:#707070 0% 0% no-repeat padding-box;
+            font-family: sans-serif;
+            letter-spacing: 0px;
+            margin-top: 5px;
+            margin-left: 50px;
+            opacity: 100%;
+            display: inline-block;
+            white-space: nowrap;
+
+        }
+        .background__logobox__dentistry{
+            width: 77px;
+            height: 8px;
+            opacity: 1;
+            font: normal normal 8px/8px SF UI Display;
+        color:#707070 0% 0% no-repeat padding-box;
+        font-family: sans-serif;
+        letter-spacing: 0px;
+        margin-top: -1px;
+        margin-left: 55px;
+        opacity: 100%;
+        white-space: nowrap;
+        display: flex;
+         }
+
+                    }
 .sky{
     height: 100vh;
     width: 100%;
@@ -117,10 +172,9 @@ svg {
     margin-top: 400px;
     margin-left: 350px;
   }
-  
-  .testing{
-      padding-top: 50px;
-  }
+.testing{
+    padding-top: 50px;
+}
   /* div,
   a {
     position: relative;

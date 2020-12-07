@@ -1,0 +1,84 @@
+#slider-row{
+  height: 35rem;
+}
+
+#greenbox-slider {
+  background: transparent linear-gradient(180deg, #71d1ca 0%, #175c64 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 35rem;
+  width: 60%;
+  z-index: -99;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#container-slider-wrap {
+  height: 150%;
+}
+
+#container-slider {
+  position: relative;
+}
+
+/* #sliderpic-container{
+  position: absolute;
+  top: 100px;
+  left:400px;
+} */
+
+#sliderpic1 {
+  width: 70%;
+  position: absolute;
+  top: 130px;
+  left: 240px;
+  background: transparent url("../../../assets/no_path_dark.png") 0% 0%
+    no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  -webkit-box-shadow: 0px 6px 6px rgba(68, 68, 68, 0.6);
+  border-radius: 10px;
+  opacity: 1;
+  z-index: 10;
+}
+
+#playbutton{
+  opacity: 1;
+  
+}
+
+#sliderpic2 {
+  width: 50%;
+  position: absolute;
+  top: 180px;
+  left: -300px;
+}
+
+.section-subheading {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    56px/60px SF UI Display;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal bold 46px/50px SF UI Display;
+  letter-spacing: 0px;
+  color: #313133;
+  text-shadow: 0px 3px 6px #40404029;
+  opacity: 1;
+  white-space: nowrap;
+  font-family: sans-serif;
+  /* margin-left:10%; */
+}
+
+.text-container-slider-right{
+    margin-left:10%;
+    width:70%
+}
+
+/* Nav Bar Slider */
+
+.nav-slider{
+  height:100px;
+  /* background-color:gray; */
+  width:100%;
+  margin-top:5%;
+}

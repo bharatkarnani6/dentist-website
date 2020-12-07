@@ -1,0 +1,13 @@
+#emi-container {
+    height:434px;
+    /* background-color:yellow; */
+    background: transparent linear-gradient(180deg, #71D1CA 0%, #175C64 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    border: black 1px solid
+}
+
+#purchase{
+    float: left;
+    margin-top:30%;
+}
