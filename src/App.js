@@ -11,8 +11,8 @@ import LandingPage from './component/LandingPage/LandingPage'
 // import Submitform from './component/sumbitform/sumbitform'
 // import Bottomnav from './component/bottomnav/bottomnav'
 import Abouts from './pages/about'
+import About from "./component/aboutPage/aboutpagebootstrap"
 import { BrowserRouter as Router, Route, Switch,Link} from 'react-router-dom';
-import About from './component/about/about';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
@@ -36,8 +36,8 @@ function App() {
             component={ Ourexperts} 
             />
              <Route exact 
-            path='/abouts' 
-            component={ Abouts} 
+            path='/about' 
+            component={ About} 
             />
              <Route exact 
             path='/treatement' 

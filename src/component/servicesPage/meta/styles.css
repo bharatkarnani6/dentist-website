@@ -1,236 +1,244 @@
 #logo-tile {
-    /* border: black 1px solid; */
-    float: left;
-    width: 593px;
-    height: 145px;
-    box-shadow: 0px 3px 27px #0000001c;
-  }
-  
-  .container {
-    /* border: black 1px solid;    */
-  }
-  
-  #right-blue-box {
-    position: relative;
-    float: right;
-    bottom: 145px;
-    z-index: -1;
-    width: 736px;
-    height: 679px;
-    background: transparent linear-gradient(180deg, #71d1ca 0%, #175c64 100%) 0%
-      0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
-    opacity: 1;
-  }
-  
-  /* #root-canal-pic{
-      width: 946px;
-      height: 650px;
-      background: transparent linear-gradient(180deg, #71D1CA 0%, #175C64 100%) 0% 0% no-repeat padding-box;
-      box-shadow: 76px 37px 63px #00000069;
-      position:relative;
-      left:600px;
-      top:100px;
-      float: right;
-      z-index:0;
-  } */
-  
-  #endodontics-title {
-    width: 508px;
-    height: 104px;
-    color: #3aa9a9;
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
-      77px/91px SF UI Display;
-    letter-spacing: var(--unnamed-character-spacing-0);
-    text-align: left;
-    font: normal normal bold 87px/91px SF UI Display;
-    letter-spacing: 0px;
-    color: #3aa9a9;
-    opacity: 1;
-  }
-  
-  #root-canal-pic {
-    width: 90%;
-    height: 500px;
-    /* width:100%;
-      height:50%; */
-      position: relative;
-      left:10%;
-    background: transparent linear-gradient(180deg, #71d1ca 0%, #175c64 100%) 0%
-      0% no-repeat padding-box;
-    box-shadow: 76px 37px 63px #00000069;
-    /* object-fit: cover; */
-    /* visibility: hidden; */
-  }
-  
-  @media (max-width: 1250px) {
-    #greenbox {
-      visibility: hidden;
-    }
-    /* #root-canal-pic{
-          visibility: hidden;
-      } */
-  }
-  
-  /* sm */
-  @media (min-width: 768px) {
-    /* #root-canal-pic {
-          width: 150px;
-      } */
-  }
-  /* md */
-  @media (max-width: 992px) {
-    #root-canal-pic {
-      width: 100%;
-      height: 650px;
-    }
-  }
-  /* lg */
-  @media (min-width: 1200px) {
-  }
-  
-  .container {
-    border: black 1px solid;
-  }
-  
-  .container-fluid {
-    /* background-color:gray; */
-  }
-  .jumbotron {
-    background-color: white;
-  }
-  #j {
-    background-color: white;
-  }
-  
-  #image-div-1 {
-    /* border: black 1px solid; */
-  }
-  
-  #othediv1{
-    padding: 0
-  }
-  
-  #greenbox {
-    /* width: 736px;
-    height: 679px; */
-    width: 100%;
-    height:400px;
-    /* height:500px; */
-    position: absolute;
-    top: 0;
-    right: 0;
-    /* float:right; */
-    padding: 0 !important;
-    margin:0;
-    background: transparent linear-gradient(180deg, #71d1ca 0%, #175c64 100%) 0%
-      0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
-  }
-  
-  #greenbox-2 {
-    width: 878px;
-    height: 908px;
-    /* position: absolute;
-      top: 1386px;
-      left: -254.7177734375px; */
-    margin-left: -120px;
-    background: transparent linear-gradient(180deg, #71d1ca 0%, #175c64 100%) 0%
-      0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
-  }
-  
-  #logo {
-    width: auto;
-    height: 145px;
-  }
-  
-  #test-icon-tile {
-    width: 593px;
-    height: 145px;
-    box-shadow: 0px 3px 27px #0000001c;
-  }
-  
-  #picture-div-2 {
-    /* border: black 1px solid; */
-  }
-  
-  #text-div-1{
-      /* background-color:black; */
-      /* padding: 0 5px; */
-  }
-  
-  .no-padding{
-    padding:0 !important;
-  }
-  
-  
-  /* Chat Floater Thing */
-  
-  .chat-circle {
-    width: 100px;
-    height: 100px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 50px;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: -10px 0px 8px #00000029;
-    border: 4px solid #3aa9a1;
-    position: relative;
-    right:15%;
-    bottom:25px;
-  }
-  #chat-horizontal-bar {
-    background: #2aa5a9 0% 0% no-repeat padding-box;
-    border-radius: 36px;
-    opacity: 1;
-    width: 306px;
-    height: 50px;
-    z-index: 0;
-    position: relative;
-    float: left;
-    /* margin:2%; */
-  }
+  /* border: black 1px solid; */
+  float: left;
+  width: 593px;
+  height: 145px;
+  box-shadow: 0px 3px 27px #0000001c;
+}
 
-  .chat-text {
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
-      22px / var(--unnamed-line-spacing-24) SF UI Display;
-    letter-spacing: var(--unnamed-character-spacing-0);
-    text-align: left;
-    font-family: Roboto;
-    font-size:24px;
-    letter-spacing: 0px;
-    padding-left: 4%;
-    margin-top:2%;
-    color: #ffffff;
-    display :inline-block;
-  
-  }
-  
-  #chat-container{
-    position: fixed;
-    bottom:100px;
-    right:60px;
-    z-index: 2;
-  }
+.container {
+  /* border: black 1px solid;    */
+}
 
-  /* Green Banner Section */
+.padding-zero{
+  padding:0 !important;
+}
 
-  #emi-options{
-    /* width: 552%; */
-    width: 1430px;
-    padding:0;
-    height: 434px;
+#right-blue-box {
+  position: relative;
+  float: right;
+  bottom: 145px;
+  z-index: -1;
+  width: 736px;
+  height: 679px;
+  background: transparent linear-gradient(180deg, #71d1ca 0%, #175c64 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+}
+
+/* #root-canal-pic{
+    width: 946px;
+    height: 650px;
     background: transparent linear-gradient(180deg, #71D1CA 0%, #175C64 100%) 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
-    
+    box-shadow: 76px 37px 63px #00000069;
+    position:relative;
+    left:600px;
+    top:100px;
+    float: right;
+    z-index:0;
+} */
+
+#endodontics-title {
+  width: 508px;
+  height: 104px;
+  color: #3aa9a9;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    77px/91px SF UI Display;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal bold 87px/91px SF UI Display;
+  letter-spacing: 0px;
+  color: #3aa9a9;
+  opacity: 1;
+}
+
+#root-canal-pic {
+  width: 90%;
+  height: 500px;
+  /* width:100%;
+    height:50%; */
+    position: relative;
+    left:10%;
+  background: transparent linear-gradient(180deg, #71d1ca 0%, #175c64 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 76px 37px 63px #00000069;
+  /* object-fit: cover; */
+  /* visibility: hidden; */
+}
+
+@media (max-width: 1250px) {
+  #greenbox {
+    visibility: hidden;
+  }
+  /* #root-canal-pic{
+        visibility: hidden;
+    } */
+}
+
+/* sm */
+@media (min-width: 768px) {
+  /* #root-canal-pic {
+        width: 150px;
+    } */
+}
+/* md */
+@media (max-width: 992px) {
+  #root-canal-pic {
+    width: 100%;
+    height: 650px;
+  }
+}
+/* lg */
+@media (min-width: 1200px) {
+}
+
+.container {
+  border: black 1px solid;
+}
+
+.container-fluid {
+  /* background-color:gray; */
+}
+.jumbotron {
+  background-color: white;
+}
+#j {
+  background-color: white;
+}
+
+#image-div-1 {
+  /* border: black 1px solid; */
+}
+
+#othediv1{
+  padding: 0
+}
+
+/* Slider Picture Area */
+
+#greenbox {
+  /* width: 736px;
+  height: 679px; */
+  width: 100%;
+  height:400px;
+  /* height:500px; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* float:right; */
+  padding: 0 !important;
+  margin:0;
+  background: transparent linear-gradient(180deg, #71d1ca 0%, #175c64 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+#greenbox-2 {
+  width: 878px;
+  height: 908px;
+  /* position: absolute;
+    top: 1386px;
+    left: -254.7177734375px; */
+  margin-left: -120px;
+  background: transparent linear-gradient(180deg, #71d1ca 0%, #175c64 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+#logo {
+  width: auto;
+  height: 145px;
+}
+
+#test-icon-tile {
+  width: 593px;
+  height: 145px;
+  box-shadow: 0px 3px 27px #0000001c;
+}
+
+#picture-div-2 {
+  /* border: black 1px solid; */
+}
+
+#text-div-1{
+    /* background-color:black; */
+    /* padding: 0 5px; */
+}
+
+.no-padding{
+  padding:0 !important;
+}
+
+
+/* Chat Floater Thing */
+
+.chat-circle {
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 50px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: -10px 0px 8px #00000029;
+  border: 4px solid #3aa9a1;
+  position: relative;
+  right:15%;
+  bottom:25px;
+}
+#chat-horizontal-bar {
+  background: #2aa5a9 0% 0% no-repeat padding-box;
+  border-radius: 36px;
+  opacity: 1;
+  width: 306px;
+  height: 50px;
+  z-index: 0;
+  position: relative;
+  float: left;
+  /* margin:2%; */
+}
+
+.chat-text {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    22px / var(--unnamed-line-spacing-24) SF UI Display;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font-family: Roboto;
+  font-size:24px;
+  letter-spacing: 0px;
+  padding-left: 4%;
+  margin-top:2%;
+  color: #ffffff;
+  display :inline-block;
+
+}
+
+#chat-container{
+  position: fixed;
+  bottom:100px;
+  right:60px;
+  z-index: 2;
+}
+
+/* Green Banner Section */
+
+#emi-options{
+  /* width: 552%; */
+  width: 1430px;
+  padding:0;
+  height: 434px;
+  background: transparent linear-gradient(180deg, #71D1CA 0%, #175C64 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  
 }
 
 #hand-pic{
-    float:left;
-    /* margin-left:80px; */
-    position: relative;
-    top:75px;
-    width: 184px;
-    height: 184px;
+  float:left;
+  /* margin-left:80px; */
+  position: relative;
+  top:75px;
+  width: 184px;
+  height: 184px;
 }
+
+

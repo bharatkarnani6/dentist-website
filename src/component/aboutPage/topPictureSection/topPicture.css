@@ -1,0 +1,43 @@
+#green-div-about-pic{
+    width: 50%;
+    /* height:870px; */
+    height:80vh;
+    background: transparent linear-gradient(180deg, #71D1CA 0%, #175C64 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    /* float: right; */
+    position: absolute;
+    right:0;
+    top:0;
+    /* z-index:-100; */
+}
+
+@media (max-width: 1250px) {
+    #green-div-about-pic {
+      visibility: hidden;
+    }
+  }
+
+  .cropped{
+    width:100%;
+    height:48rem;
+    object-position: 0% 10%;    
+    object-fit: cover;
+  }
+
+  #expertspic{
+    background: transparent linear-gradient(180deg, #71D1CA 0%, #175C64 100%) 0% 0% no-repeat padding-box;
+    box-shadow: -36px 10px 63px #00000069;
+    margin-top:5%
+  }
+
+  #top-title{
+    font-family: Roboto, sans-serif;
+    font-size:77px;
+    color:#3AA9A9;
+  }
+
+  #j2{
+      background:white;
+  }
+  
