@@ -11,10 +11,13 @@ import LandingPage from './component/LandingPage/LandingPage'
 // import Submitform from './component/sumbitform/sumbitform'
 // import Bottomnav from './component/bottomnav/bottomnav'
 import Abouts from './pages/about'
-import About from "./component/aboutPage/aboutpagebootstrap"
+// import About from "./component/aboutPage/aboutpagebootstrap"
 import { BrowserRouter as Router, Route, Switch,Link} from 'react-router-dom';
-import { ParallaxProvider } from 'react-scroll-parallax';
+// import { ParallaxProvider } from 'react-scroll-parallax';
+import About from './component/about/about';
 
+import CarouselTesting from './component/Carousel_Testing/CarouselTesting';
+import Carousel from './component/Carousel_Testing2/Carousel';
 function App() {
   return (
     <Router>
@@ -54,6 +57,14 @@ function App() {
             <Route exact 
             path='/services' 
             component={Services} 
+            />
+            <Route exact 
+            path='/CarouselTesting' 
+            component={CarouselTesting} 
+            />
+             <Route exact 
+            path='/CarouselTesting2' 
+            component={Carousel} 
             />
           </Switch>
         </Fragment>

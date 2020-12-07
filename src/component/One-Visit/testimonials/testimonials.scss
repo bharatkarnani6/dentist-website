@@ -1,0 +1,70 @@
+.testimonials{
+    margin-top: 30px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.test{
+    padding: 100px;
+}
+.image {
+    padding: 5px;
+    img{
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        border: 5px solid #46C1BB;
+        padding: 20px;
+        float: left;
+    }
+}
+.text_1{
+    width: 600px;
+    height: auto;
+    // background-color: pink;
+    padding-top: 50px;
+    padding-left: 300px;
+    
+    h1{
+        font-size: 40px;
+        font: var(--unnamed-font-style-normal) normal 300 41px/49px SF UI Display;
+        letter-spacing: var(--unnamed-character-spacing-0);
+        text-align: left;
+        font: normal normal 300 41px/49px SF UI Display;
+
+    }
+    p{
+        font-size: 20px;
+    }
+       
+}
+.slides {
+    transform: scale(0.6);
+    transition: transform 300ms;
+    opacity: 0.5;
+    margin: 0 auto;
+}
+  
+.activeSlides {
+    transform: scale(1.1);
+    opacity: 1;
+    width: 100%;
+  }
+.arrows {
+    background-color: white;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+.arrows svg {
+    transition: color 300ms;
+  }
+  
+.arrows svg:hover {
+    color: #68edff;
+  }
+  
+.next_button_2 {
+    right: 15%;
+    top: 50%;
+  }
