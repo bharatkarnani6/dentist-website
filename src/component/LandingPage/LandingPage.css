@@ -8,6 +8,49 @@ section {
   height: 160vh;
 }
 
+.background__logobox {
+  width: 330px;
+  height: 110px;
+}
+
+.background__logobox__logoimage {
+  position: absolute;
+  top: 25px;
+  left: 45px;
+}
+
+.background__logobox__Swetha {
+  width: 103px;
+  height: 21px;
+  opacity: 1;
+  font: normal normal 18px/20px SF UI Display;
+  color: #707070 0% 0% no-repeat padding-box;
+  font-family: sans-serif;
+  letter-spacing: 0px;
+  margin-top: 5px;
+  margin-left: 50px;
+  opacity: 100%;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.background__logobox__dentistry {
+  width: 77px;
+  height: 8px;
+  opacity: 1;
+  font: normal normal 8px/8px SF UI Display;
+  color: #707070 0% 0% no-repeat padding-box;
+  font-family: sans-serif;
+  letter-spacing: 0px;
+  margin-top: -1px;
+  margin-left: 55px;
+  opacity: 100%;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .sky {
   height: 100vh;
   width: 100%;
