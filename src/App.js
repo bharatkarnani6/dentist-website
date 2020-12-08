@@ -24,7 +24,7 @@ function App() {
      
         <Fragment>
           <Switch>
-            <Route exact path='/' component={LoadingPage} />
+            <Route exact path='/' component={LandingPage} />
               <Route
               exact
               path='/loadingPage'

@@ -1,54 +1,70 @@
-// import React, { useState } from 'react';
-// import './Carousel.scss';
-// import Slider from "react-slick";
-// import sliderpic1 from "../../assets/teeth1.png";
-// import sliderpic2 from "../../assets/cosmetic_bonding.png";
-// import astronaut from "../../assets/astronaut.png";
-// import celebrating from "../../assets/celebrating.png";
-// import education from "../../assets/education.png";
+import React, { useState, useEffect } from 'react';
+import './Carousel.scss';
+import heading1 from '../../assets/Group 553.png';
+import heading2 from '../../assets/Group 678.png';
 
 
-// function Carousel() {
-//     const NextArrow = ({ onClick }) => {
-//         return (
-//             <div className="arrow next" onClick={onClick}>
-//                 <h1>Right</h1>
-//             </div>
-//         );
-//     };
 
-//     const PrevArrow = ({ onClick }) => {
-//         return (
-//             <div className="arrow prev" onClick={onClick}>
-//                 <h1>left</h1>
-//             </div>
-//         );
-//     };
-//     const images = [astronaut,sliderpic2,sliderpic1];
-//     const [imageIndex, setImageIndex] = useState(0);
-//     const settings = {
-//     infinite: true,
-//     lazyLoad: true,
-//     speed: 300,
-//     slidesToShow: 2,
-//     centerMode: true,
-//     centerPadding: 0,
-//     nextArrow: <NextArrow />,
-//     prevArrow: <PrevArrow />,
-//     beforeChange: (current, next) => setImageIndex(next),
-//   };
+export default function Carousel() {
+    useEffect(() => {
+        heading();
+    })
 
-//     return (
-//         <div className="testing">
-//             <Slider {...settings}>
-//                 {images.map((img, idx) => (
-//                     <div className={idx === imageIndex ? "slide activeSlide" : "slide"}>
-//                         <img src={img} alt={img} />
-//                     </div>
-//                 ))}
-//             </Slider>
-//         </div>
-//     );
-// }
+   
+    function heading() {
+        // tslint:disable-next-line:no-unused-expression
+        // tslint:disable-next-line:prefer-const
+        const svgElement = document.getElementById('animation_heading');
+        const maskedElement1 = document.querySelector('#mask-circle_heading');
+        const circleFeedback1 = document.querySelector('#circle-shadow_heading');
+        const svgPoint = svgElement.createSVGPoint();
+        // tslint:disable-next-line:typedef
+        function cursorPoint(e, svg) {
+            svgPoint.x = e.clientX;
+            svgPoint.y = e.clientY;
+            return svgPoint.matrixTransform(svg.getScreenCTM().inverse());
+        }
+        // tslint:disable-next-line:typedef
+        function update(svgCoords) {
+            maskedElement1.setAttribute('cx', svgCoords.x);
+            maskedElement1.setAttribute('cy', svgCoords.y);
+            circleFeedback1.setAttribute('cx', svgCoords.x);
+            circleFeedback1.setAttribute('cy', svgCoords.y);
+        }
+        // tslint:disable-next-line:typedef
+        // tslint:disable-next-line:only-arrow-functions
+        window.addEventListener('mousemove', (e) => {
+            update(cursorPoint(e, svgElement));
+           
+        }, false);
+        document.addEventListener('touchmove', (e) => {
+            e.preventDefault();
+            const touch = e.targetTouches[0];
+            if (touch) {
+                update(cursorPoint(touch, svgElement));
+            }
+        }, false);
+    }
 
-// export default Carousel;
+    return (
+        <div>
+            <svg className="heading_image" id="animation_heading">
+                {/* <rect width="100%" height="100%" fill="yellow" /> */}
+                <image xlinkHref={heading1} width="800" height="800" />
+            </svg>
+
+            <svg className="heading_image" id="animation_heading">
+                <defs>
+                    <clipPath id="mask">
+                        <circle id="mask-circle_heading" cx="50%" cy="50%" r="14%" style={{ fill: '#ffffff' }} />
+                    </clipPath>
+                </defs>
+                <g clipPath="url(#mask)">
+                    <rect width="100%" height="100%" fill="#272730" />
+                    <image xlinkHref={heading2} width="800" height="800" />
+                </g>
+                <circle id="circle-shadow_heading" cx="50%" cy="50%" r="14%" style={{ stroke: '#fff', fill: 'transparent', strokeWidth: '5' }} />
+            </svg>
+        </div>   
+    );
+}
