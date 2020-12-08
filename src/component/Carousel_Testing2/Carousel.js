@@ -43,6 +43,7 @@ export default function Carousel() {
                 document.getElementById('circle-shadow_heading').style.display = 'none';
                 document.getElementById('mask-circle_heading').style.display = 'none';
             }
+
            
         }, false);
         document.addEventListener('touchmove', (e) => {
