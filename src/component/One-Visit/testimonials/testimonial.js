@@ -1,10 +1,16 @@
-import React, { Component, useState } from "react";
+import React, { Component, useEffect, useState } from "react";
 import Slider from "react-slick";
 import './testimonials.scss';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 export default function Testimonials() {
+
+    useEffect(()=>{
+        AOS.init();
+    })
+
     const NextArrow = ({ onClick }) => {
         return (
             <div className="arrows next_button_2" onClick={onClick}>
@@ -29,13 +35,13 @@ export default function Testimonials() {
         <div className="testimonials">
             <Slider {...settings}>
                 {numbers.map((i) => {
-                    return (<div className={i === imageIndex ? "slides activeSlides" : "slides"}>
+                    return (<div className={i === imageIndex ? "slides activeSlides" : "slides"} >
                         <div className="test">
                             
-                        <div className="image">
+                        <div className="image" data-aos="zoom-in" data-aos-duration="1000">
                             <img src="https://images.theconversation.com/files/304957/original/file-20191203-66986-im7o5.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" />
                         </div>
-                        <div className="text_1">
+                        <div className="text_1" data-aos="zoom-in" data-aos-duration="1000">
                             <h1 style={{ color: '#227577' }}>Reena Khan</h1>
                             <p style={{ color: '#227577' }}>"Where science meets art to make you smile. Such a advanced technology I have ever seen."</p>
                         </div>

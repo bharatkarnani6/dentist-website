@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import './OneVisit.scss';
 import Image from '../../assets/CER-Press-image-CEREC-Ortho-SW-2.0-1.png';
 import Slider from "react-slick";
@@ -14,14 +14,14 @@ import "aos/dist/aos.css";
 
 function OneVisit() {
 
-    useEffect(()=>{
+    useEffect(() => {
         AOS.init();
-    },[]);
+    }, []);
 
     const NextArrow = ({ onClick }) => {
         return (
             <div className="arrows next_button" onClick={onClick}>
-                <button style={{outline:'none'}} type="submit" className="previous2 round2">
+                <button style={{ outline: 'none' }} type="submit" className="previous2 round2">
                     &#8250;
               </button>
             </div>
@@ -31,7 +31,7 @@ function OneVisit() {
     const PrevArrow = ({ onClick }) => {
         return (
             <div className="arrows prev_button" onClick={onClick}>
-                <button style={{outline:'none'}} type="submit" className="previous1 round1">
+                <button style={{ outline: 'none' }} type="submit" className="previous1 round1">
                     &#8249;
               </button>
             </div>
@@ -53,10 +53,10 @@ function OneVisit() {
     return (
         <div className="onevisit">
             <div className="row">
-                <div className="col-6 text1">
+                <div className="col-6 text1" data-aos="fade-right" data-aos-duration="1000">
                     <h1>The first in <br /> Karnataka <br /> to implement <br /> One-Visit Dentistry</h1>
                     <p>We are one of the first in the nation to adopt one-day dentistry through CEREC (Chairside Economical Restoration of Esthetic Ceramics, the ultimate in digital dentistry technology.</p>
-                    
+
                 </div>
                 <div className="col-6">
                     <div className="background"></div>
@@ -65,30 +65,30 @@ function OneVisit() {
                 </div>
             </div>
             <div className="row sliders">
-                <div className="col-6 text5">
+                <div className="col-6 text5" data-aos="fade-right" data-aos-duration="1000">
                     <h1>Orthodontics</h1>
                     <p>From traditional braces to invisible aligners, get the best alignment for your smile.</p>
                     <br />
                     <button className="btn btn-primary">Explore</button>
-                    
+
                     <div>
-                    <Parallax speed={4}>
-                        <h1 className="treatments text-center">TREATMENTS</h1>
+                        <Parallax speed={4}>
+                            <h1 className="treatments text-center">TREATMENTS</h1>
                         </Parallax>
                     </div>
-                    
+
                     <div class="three-dots">
-              <span class="second"></span>
-              <span class="second"></span>
-              <span class="first"></span>
-              <span class="first"></span>
-              <span class="first"></span>
-              <span class="first"></span>
-              <span class="first"></span>
-              <span class="first"></span>
-              
-              </div>
-                    
+                        <span class="second"></span>
+                        <span class="second"></span>
+                        <span class="first"></span>
+                        <span class="first"></span>
+                        <span class="first"></span>
+                        <span class="first"></span>
+                        <span class="first"></span>
+                        <span class="first"></span>
+
+                    </div>
+
                 </div>
                 <div className="col-6 image_5">
                     <div className="back_colors"></div>
@@ -109,13 +109,13 @@ function OneVisit() {
                     <div className="image_2" data-aos="fade-up-right" data-aos-duration="1000">
                     </div>
                 </div>
-                <div className="col-6 text2">
+                <div className="col-6 text2" data-aos="fade-left" data-aos-duration="1000">
                     <h1>Meet<br></br> Dr. Prashant Patil</h1>
                     <p>Read about the story of the one-of a kind, world-class dentistry in Karnataka and the man behind it.</p>
                 </div>
             </div>
             <div className="row">
-                <div className="col-6 text3">
+                <div className="col-6 text3" data-aos="fade-right" data-aos-duration="1000">
                     <h1>Dental Tourism.</h1>
                     <h3>A paid vacation + your dental procedure</h3><br></br>
                     <p>Combine your paid vacation with your dental procedure schedule to save money or to get more value out of investment..</p>
@@ -126,7 +126,7 @@ function OneVisit() {
                 </div>
             </div>
             <div className="counter">
-                <div className="row text-center">
+                <div className="row text-center" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div className="col">
                         <h1>21</h1>
                         <p>Years of Experience</p>
