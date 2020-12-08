@@ -34,10 +34,7 @@ export default function Carousel() {
         // tslint:disable-next-line:typedef
         // tslint:disable-next-line:only-arrow-functions
         window.addEventListener('mousemove', (e) => {
-            const scrol = window.pageYOffset + e.clientY;
-            if(scrol < 275){
-                update(cursorPoint(e, svgElement));
-            }
+            update(cursorPoint(e, svgElement));
            
         }, false);
         document.addEventListener('touchmove', (e) => {
@@ -52,7 +49,7 @@ export default function Carousel() {
     return (
         <div>
             <svg className="heading_image" id="animation_heading">
-                <rect width="100%" height="100%" fill="yellow" />
+                {/* <rect width="100%" height="100%" fill="yellow" /> */}
                 <image xlinkHref={heading1} width="800" height="800" />
             </svg>
 

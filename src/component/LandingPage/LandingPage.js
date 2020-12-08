@@ -135,10 +135,10 @@ function LandingPage() {
                         <circle id="circle-shadow_heading" cx="50%" cy="50%" r="14%" style={{ stroke: '#fff', fill: 'transparent', strokeWidth: '5' }} />
                     </svg> */}
                 </div>
-                <Parallax speed={6}>
+                <Parallax speed={8}>
                 <div className="testing">
                     <svg id="tooth">
-                        <rect width="100%" height="100%" fill="pink" />
+                        {/* <rect width="100%" height="100%" fill="pink" /> */}
                         <image xlinkHref={Tooth} width="800" height="800" />
                     </svg>
 
