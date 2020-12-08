@@ -14,10 +14,10 @@ export default function Carousel() {
     function heading() {
         // tslint:disable-next-line:no-unused-expression
         // tslint:disable-next-line:prefer-const
-        const svgElement = document.getElementById('animation_heading');
+        const svgElement1 = document.getElementById('animation_heading');
         const maskedElement1 = document.querySelector('#mask-circle_heading');
         const circleFeedback1 = document.querySelector('#circle-shadow_heading');
-        const svgPoint = svgElement.createSVGPoint();
+        const svgPoint = svgElement1.createSVGPoint();
         // tslint:disable-next-line:typedef
         function cursorPoint(e, svg) {
             svgPoint.x = e.clientX;
@@ -34,14 +34,23 @@ export default function Carousel() {
         // tslint:disable-next-line:typedef
         // tslint:disable-next-line:only-arrow-functions
         window.addEventListener('mousemove', (e) => {
-            update(cursorPoint(e, svgElement));
+            const scrol = window.pageYOffset + e.clientY;
+            if(scrol < 275){
+                update(cursorPoint(e, svgElement1));
+                document.getElementById('circle-shadow_heading').style.display = 'block';
+                document.getElementById('mask-circle_heading').style.display = 'block';
+            } else {
+                document.getElementById('circle-shadow_heading').style.display = 'none';
+                document.getElementById('mask-circle_heading').style.display = 'none';
+            }
+
            
         }, false);
         document.addEventListener('touchmove', (e) => {
             e.preventDefault();
             const touch = e.targetTouches[0];
             if (touch) {
-                update(cursorPoint(touch, svgElement));
+                update(cursorPoint(touch, svgElement1));
             }
         }, false);
     }
@@ -49,22 +58,23 @@ export default function Carousel() {
     return (
         <div>
             <svg className="heading_image" id="animation_heading">
-                {/* <rect width="100%" height="100%" fill="yellow" /> */}
+                <rect width="100%" height="100%" fill="yellow" 
+                fillOpacity="0"
+                />
                 <image xlinkHref={heading1} width="800" height="800" />
             </svg>
-
             <svg className="heading_image" id="animation_heading">
                 <defs>
-                    <clipPath id="mask">
+                    <clipPath id="mask1">
                         <circle id="mask-circle_heading" cx="50%" cy="50%" r="14%" style={{ fill: '#ffffff' }} />
                     </clipPath>
                 </defs>
-                <g clipPath="url(#mask)">
+                <g clipPath="url(#mask1)">
                     <rect width="100%" height="100%" fill="#272730" />
                     <image xlinkHref={heading2} width="800" height="800" />
                 </g>
                 <circle id="circle-shadow_heading" cx="50%" cy="50%" r="14%" style={{ stroke: '#fff', fill: 'transparent', strokeWidth: '5' }} />
-            </svg>
+            </svg> 
         </div>   
     );
 }

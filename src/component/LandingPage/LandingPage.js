@@ -61,8 +61,13 @@ function LandingPage() {
             const scro = window.pageYOffset + e.clientY;
             console.log(scro);
 
-            if(scro > 400){
+            if(scro > 350){
                 update(cursorPoint(e, svgElement));
+                document.getElementById('circle-shadow').style.display = 'block';
+                document.getElementById('mask-circle').style.display = 'block';
+            } else {
+                document.getElementById('circle-shadow').style.display = 'none';
+                document.getElementById('mask-circle').style.display = 'none';
             }
            
         }, false);
@@ -138,7 +143,9 @@ function LandingPage() {
                 <Parallax speed={8}>
                 <div className="testing">
                     <svg id="tooth">
-                        {/* <rect width="100%" height="100%" fill="pink" /> */}
+                        <rect width="100%" height="100%" fill="pink" 
+                        fillOpacity="0"
+                         />
                         <image xlinkHref={Tooth} width="800" height="800" />
                     </svg>
 
