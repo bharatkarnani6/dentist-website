@@ -65,12 +65,14 @@
     }
     .treatments{
         font: normal normal bold 196px/330px SF UI Display;
+        position: relative;
         font-size: 120px;
         letter-spacing: 39.79px;
         opacity: 0.1;
         color: #000000;
         padding-left: 12px;
-        margin-top: -15px;
+        margin-top: 805px;
+        margin-bottom: -810px;
     }
 }
 .sliders{
@@ -203,7 +205,7 @@
     padding-left: 20%;
     padding-bottom: 20%;
     position: absolute;
-    margin-top: -55px;
+    margin-top: -299px;
     margin-left: -60px;
     span.first {
       width: 150px;
