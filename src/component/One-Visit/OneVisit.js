@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './OneVisit.scss';
 import Image from '../../assets/CER-Press-image-CEREC-Ortho-SW-2.0-1.png';
 import Slider from "react-slick";
@@ -8,7 +8,16 @@ import slider3 from '../../assets/Intraoral-Scanner.png';
 import slider4 from '../../assets/CER-Press-image-CEREC-Ortho-SW-2.0-1.png';
 import Testimonials from './testimonials/testimonial';
 import Parallax from 'react-rellax';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 function OneVisit() {
+
+    useEffect(()=>{
+        AOS.init();
+    },[]);
+
     const NextArrow = ({ onClick }) => {
         return (
             <div className="arrows next_button" onClick={onClick}>
@@ -51,7 +60,7 @@ function OneVisit() {
                 </div>
                 <div className="col-6">
                     <div className="background"></div>
-                    <div className="image_1">
+                    <div className="image_1" data-aos="fade-left" data-aos-duration="1000">
                     </div>
                 </div>
             </div>
@@ -83,7 +92,7 @@ function OneVisit() {
                 </div>
                 <div className="col-6 image_5">
                     <div className="back_colors"></div>
-                    <div className="slider_images">
+                    <div className="slider_images" data-aos="fade-left" data-aos-duration="1000">
                         <Slider {...settings}>
                             {images.map((img, idx) => (
                                 <div className={idx === imageIndex ? "slides activeSlides" : "slides"}>
@@ -97,7 +106,7 @@ function OneVisit() {
             <div className="row">
                 <div className="col-6">
                     <div className="background_2"></div>
-                    <div className="image_2">
+                    <div className="image_2" data-aos="fade-up-right" data-aos-duration="1000">
                     </div>
                 </div>
                 <div className="col-6 text2">
@@ -113,7 +122,7 @@ function OneVisit() {
 
                 </div>
                 <div className="col-6">
-                    <div className="image_3"></div>
+                    <div className="image_3" data-aos="fade-left" data-aos-duration="1000"></div>
                 </div>
             </div>
             <div className="counter">
