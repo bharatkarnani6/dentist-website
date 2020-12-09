@@ -3,7 +3,7 @@ import './Carousel.scss';
 import heading1 from '../../assets/Group 553.png';
 import heading2 from '../../assets/Group 678.png';
 
-
+import Ring from '../../assets/Group 679.png';
 
 export default function Carousel() {
     useEffect(() => {
@@ -35,7 +35,7 @@ export default function Carousel() {
         // tslint:disable-next-line:only-arrow-functions
         window.addEventListener('mousemove', (e) => {
             const scrol = window.pageYOffset + e.clientY;
-            if(scrol < 275){
+            if(scrol < 375){
                 update(cursorPoint(e, svgElement1));
                 document.getElementById('circle-shadow_heading').style.display = 'block';
                 document.getElementById('mask-circle_heading').style.display = 'block';
@@ -61,19 +61,22 @@ export default function Carousel() {
                 <rect width="100%" height="100%" fill="yellow" 
                 fillOpacity="0"
                 />
-                <image xlinkHref={heading1} width="800" height="800" />
+                <image xlinkHref={heading1} width="900" height="900" />
             </svg>
             <svg className="heading_image" id="animation_heading">
                 <defs>
                     <clipPath id="mask1">
-                        <circle id="mask-circle_heading" cx="50%" cy="50%" r="14%" style={{ fill: '#ffffff' }} />
+                        <circle id="mask-circle_heading" cx="50%" cy="50%" r="13%" style={{ fill: '#ffffff' }} />
                     </clipPath>
+                    <filter id="this_image_heading" x="0%" y="0%" width="100%" height="100%">
+                        <feImage cx="50%" cy="50%" r="15%" xlinkHref={Ring}/>
+                    </filter>
                 </defs>
                 <g clipPath="url(#mask1)">
-                    <rect width="100%" height="100%" fill="#272730" />
-                    <image xlinkHref={heading2} width="800" height="800" />
+                    <rect width="100%" height="100%" fill="#46C1BB" />
+                    <image xlinkHref={heading2} width="900" height="900" />
                 </g>
-                <circle id="circle-shadow_heading" cx="50%" cy="50%" r="14%" style={{ stroke: '#fff', fill: 'transparent', strokeWidth: '5' }} />
+                <circle id="circle-shadow_heading" cx="50%" cy="50%" r="15%" filter="url(#this_image_heading)" />
             </svg> 
         </div>   
     );
